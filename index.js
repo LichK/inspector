@@ -1,17 +1,11 @@
 'use strict';
 
-var Dyer = require("dyer");
 var Event = require("emitter");
 
 function Inspector(opt) {
     var doc = this.doc = opt.doc || document;
     var every = opt.every;
     var self = this;
-
-    var dyer = this.dyer = new Dyer({
-        doc: doc,
-        active: true
-    });
 
     this._active = opt.active || false;
 }
@@ -24,9 +18,6 @@ Inspector.prototype.setActive = function (active) {
 
 Inspector.prototype.toggleActive = function () {
     this._active = !this._active;
-    if (!this._active) {
-        this.dyer.clear();
-    }
 }
 
 module.exports = Inspector;
