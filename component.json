@@ -1,0 +1,14 @@
+{
+    "name": "inspector",
+    "repo": "LichK/inspector",
+    "description": "Inspector for web page",
+    "version": "0.0.1",
+    "keywords": [],
+    "dependencies": {},
+    "development": {},
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": [
+        "index.js"
+    ]
+}
